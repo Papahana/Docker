@@ -30,3 +30,10 @@ It makes working with docker really easier
 
 **Installing Visual Studio Code**
 
+Visual Studio is an Integrated Development Environment, also known as an IDE. Visual Studio Code is a code editor. A developer can easily edit their code
+
+.. code-block:: bash
+
+    https://code.visualstudio.com/
+
+This extensions are necessary for using docker with vs code
