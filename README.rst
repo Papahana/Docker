@@ -1,13 +1,13 @@
-Deep Learning Assistant
+How to install and setup Docker?
 ===============
-This library offers some tools to make the process of creating and training an ANN eassier and faster.
+Create a Python Dev Environment with Docker and VS Code
 
-Installing
+Installing Docker
 ============
 
 .. code-block:: bash
 
-    pip install dlgpu_assistant
+    https://www.docker.com/get-started/
 
 .. code-block:: bash
 
