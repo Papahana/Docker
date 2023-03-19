@@ -15,3 +15,7 @@ You'll need to install the Linux kernel update package
 .. code-block:: bash
 
     https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+Installing Ubuntu Terminal
+============
+Install the Ubuntu 20.04 LTS from Microsoft Store
