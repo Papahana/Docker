@@ -37,3 +37,7 @@ Visual Studio is an Integrated Development Environment, also known as an IDE. Vi
     https://code.visualstudio.com/
 
 This extensions are necessary for using docker with vs code
+
+* Docker
+* Dev Containers
+
