@@ -56,4 +56,4 @@ Docker Commands
     docker images  # show your images
 
     docker rm  # remove a container
-docker rmi  # remove an existing image
+    docker rmi  # remove an existing image
