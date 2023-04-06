@@ -41,3 +41,19 @@ This extensions are necessary for using docker with vs code
 * Docker
 * Dev Containers
 
+Docker Commands
+===============
+
+.. code-block:: bash
+
+    docker run -di --name <name_container> <name_image> # create a container
+    docker stop <name_container>
+    docker start <name_container>
+    docker exec -it <name_container> bash # open a container that's already running
+
+    docker ps  # show running containers
+    docker ps -a  # show all the containers
+    docker images  # show your images
+
+    docker rm  # remove a container
+docker rmi  # remove an existing image
