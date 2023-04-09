@@ -59,4 +59,4 @@ Docker Commands
     docker rmi  # remove an existing image
     
     docker build .  # Build the image from a Dockerfile
-    docker image tag old_name:old_tag new_name:new_tag  # Change the name and tag. This second image depends on the initial image.
+    docker image tag old_name:old_tag new_name:new_tag  # Change the name and tag. This second image depends on the original one.
