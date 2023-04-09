@@ -57,3 +57,6 @@ Docker Commands
 
     docker rm  # remove a container
     docker rmi  # remove an existing image
+    
+    docker build .
+    docker image tag old_name:old_tag new_name:new_tag
