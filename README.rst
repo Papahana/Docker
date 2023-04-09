@@ -69,6 +69,5 @@ Linux System Commands
     free -h
     vmstat -s -S M
     
-    df -h
-    df –ht /home
-    
+    du -sh directorio/  # Less recommended -> df –ht /home
+    du -sh */  # Less recommended -> df -h
