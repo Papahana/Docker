@@ -60,3 +60,15 @@ Docker Commands
     
     docker build .  # Build the image from a Dockerfile
     docker image tag old_name:old_tag new_name:new_tag  # Change the name:tag. This second image depends on the original one.
+
+Linux System Commands
+===============
+
+.. code-block:: bash
+    
+    free -h
+    vmstat -s -S M
+    
+    df -h
+    df –ht /home
+    
