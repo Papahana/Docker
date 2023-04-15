@@ -47,6 +47,7 @@ Docker Commands
 .. code-block:: bash
 
     docker run -di --name <name_container> <name_image> # create a container
+    docker run -d --name <name_container> -p 80:80 <name_image> # create a container for webdev
     docker stop <name_container>
     docker start <name_container>
     docker exec -it <name_container> bash # open a container that's already running
