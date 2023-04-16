@@ -52,7 +52,7 @@ Docker Commands
     docker exec -it <name_container> bash # open a container that's already running
     
     # For Flask application
-    docker build -t demo-dockerflask:latest .
+    docker build -t <name_image>:latest .
     docker run -d --name <name_container> -p 80:80 <name_image> # create a container for webdev
 
     docker ps  # show running containers
