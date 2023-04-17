@@ -75,3 +75,8 @@ Linux System Commands
     
     du -sh directorio/  # Less recommended -> df –ht /home
     du -sh */  # Less recommended -> df -h
+    
+    adduser <name>  # Deactivate root login in "sudo nano /etc/ssh/sshd_config" with "PermitRootLogin no". Then "/etc/init.d/ssh restart"
+    sudo cat /etc/passwd  # This return the list of users
+    su -  # Login in root user
+    
