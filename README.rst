@@ -49,11 +49,12 @@ Docker Commands
     docker run -di --name <name_container> <name_image> # create a container
     docker stop <name_container>
     docker start <name_container>
-    docker exec -it <name_container> bash # open a container that's already running
+    docker exec -it <name_container> bash  # open a container that's already running
+    docker exec -u 0 -it <name_container> bash  # open a container as root
     
     # For Flask application
     docker build -t <name_image>:latest .
-    docker run -d --name <name_container> -p 80:80 <name_image> # create a container for webdev
+    docker run -d --name <name_container> -p 80:80 <name_image>  # create a container for webdev
 
     docker ps  # show running containers
     docker ps -a  # show all the containers
