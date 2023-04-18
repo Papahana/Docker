@@ -1,4 +1,4 @@
-How to install and setup Docker?
+Install and setup Docker on Windows
 ===============
 Create a Python Dev Environment with Docker and VS Code
 
