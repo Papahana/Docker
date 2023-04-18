@@ -66,6 +66,9 @@ Docker Commands
     
     docker build .  # Build the image from a Dockerfile
     docker image tag old_name:old_tag new_name:new_tag  # Change the name:tag. This second image depends on the original one
+    
+    docker update  # In case you want to change something to an already running container
+    docker inspect  # Use this command whith the update instruction to see the specs
 
 Linux System Commands
 ===============
