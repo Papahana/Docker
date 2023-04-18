@@ -55,6 +55,7 @@ Docker Commands
     # For Flask application
     docker build -t <name_image>:latest .
     docker run -d --name <name_container> -p 80:80 <name_image>  # create a container for webdev
+    docker run -d --name <name_container> --restart unless-stopped -p 80:80 <name_image>
 
     docker ps  # show running containers
     docker ps -a  # show all the containers
