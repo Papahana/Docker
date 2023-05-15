@@ -121,3 +121,17 @@ Install using the apt repository
     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
     sudo docker run hello-world
     
+ESP32 in Docker
+===============
+
+.. code-block:: bash
+
+    ls -1 /dev > dev.txt
+    ls -1 /dev > dev2.txt
+    diff dev.txt dev2.txt  # Expected result "ttyUSB0" or "ttyACM0"
+    rm dev*.txt
+
+.. code-block:: bash
+
+    docker run -t -i --device=/dev/ttyUSB0 ubuntu bash
+    ampy -p /dev/ttyACM0 ls
