@@ -9,5 +9,5 @@ RUN apt-get clean \
 
 RUN pip install --upgrade pip
 
-RUN useradd -m user
-USER user
+# RUN useradd -m user
+# USER user
