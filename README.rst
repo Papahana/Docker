@@ -121,7 +121,8 @@ Linux System Commands
     du -sh </directory>  # To see the size of a directory.   Less recommended -> df –ht /home
     du -sh /*  # Explore the size of differents directories. Less recommended -> df -h
     
-    adduser <name>  # Deactivate root login in "sudo nano /etc/ssh/sshd_config" with "PermitRootLogin no". Then "/etc/init.d/ssh restart"
+    adduser <name>  # Deactivate root login in "sudo nano /etc/ssh/sshd_config" with "PermitRootLogin no". 
+                    # Then "/etc/init.d/ssh restart"
     sudo cat /etc/passwd  # This return the list of users
     ssudo su  # Login as root user
     
