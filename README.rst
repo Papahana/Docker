@@ -135,5 +135,4 @@ ESP32 in Docker
 
 .. code-block:: bash
 
-    docker run -t -i --device=/dev/ttyUSB0 ubuntu bash
     ampy -p /dev/ttyACM0 ls
