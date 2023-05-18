@@ -136,5 +136,9 @@ ESP32 in Docker
 ===============
 
 .. code-block:: bash
-
-    ampy -p /dev/ttyACM0 ls
+    
+    # Update the WSL version of a specific distro
+    wsl -l -v # List all the installed distros
+    wsl --set-version <distro name> 2 # Change the WSL version
+    
+    ampy -p /dev/ttyACM0 ls # List the content of the ESP32
