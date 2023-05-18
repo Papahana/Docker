@@ -118,6 +118,8 @@ Linux System Commands
     
     free -h  # Ram Memory
     
+    ls -a # List hide files and directories
+    
     du -sh </directory>  # To see the size of a directory.   Less recommended -> df –ht /home
     du -sh /*  # Explore the size of differents directories. Less recommended -> df -h
     
