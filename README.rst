@@ -80,6 +80,8 @@ Install using the apt repository
 Docker Commands
 ===============
 
+List of usefull commands to interact with the CLI of Docker.
+
 .. code-block:: bash
 
     # Create the image and the container
