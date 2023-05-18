@@ -46,26 +46,29 @@ Docker Commands
 
 .. code-block:: bash
 
-    docker run -di --name <name_container> <name_image> # create a container
-    docker stop <name_container>
+    # Create the image and the container
+    docker build -t <name_image>:latest .
+    docker run -di 
+        --name <name_container> 
+        -p 80:5000
+        --restart unless-stopped
+        --device=/dev/ttyUSB0
+        <name_image> # create a container
+    
+    # Control the container
     docker start <name_container>
+    docker stop <name_container>
     docker exec -it <name_container> bash  # open a container that's already running
     docker exec -u 0 -it <name_container> bash  # open a container as root
     
-    # For Flask application
-    docker build -t <name_image>:latest .
-    docker run -d --name <name_container> -p 80:5000 <name_image>  # create a container for webdev
-    docker run -d --name <name_container> --restart unless-stopped -p 80:5000 <name_image>
-
+    # Get the list of containers and the images
     docker ps  # show running containers
     docker ps -a  # show all the containers
     docker images  # show your images
-
+    
+    # Remove containers and images
     docker rm  # remove a container
     docker rmi  # remove an existing image
-    
-    docker build .  # Build the image from a Dockerfile
-    docker image tag old_name:old_tag new_name:new_tag  # Change the name:tag. This second image depends on the original one
     
     docker update  # In case you want to change something to an already running container
     docker inspect  # Use this command whith the update instruction to see the specs
@@ -75,15 +78,19 @@ Linux System Commands
 
 .. code-block:: bash
     
-    free -h
-    vmstat -s -S M
+    free -h  # Ram Memory
     
-    du -sh directorio/  # Less recommended -> df –ht /home
-    du -sh */  # Less recommended -> df -h
+    du -sh </directory>  # To see the size of a directory.   Less recommended -> df –ht /home
+    du -sh /*  # Explore the size of differents directories. Less recommended -> df -h
     
     adduser <name>  # Deactivate root login in "sudo nano /etc/ssh/sshd_config" with "PermitRootLogin no". Then "/etc/init.d/ssh restart"
     sudo cat /etc/passwd  # This return the list of users
-    su -  # Login in root user
+    ssudo su  # Login as root user
+    
+    ls -1 /dev > dev.txt  # List of peripherals connected in this moment
+    ls -1 /dev > dev2.txt  # List of peripherals connected in this moment
+    diff dev.txt dev2.txt  # Expected result "ttyUSB0" or "ttyACM0"
+    rm dev*.txt  # Delete the ".txt" files
 
 Install Docker on Linux
 ===============
@@ -123,13 +130,6 @@ Install using the apt repository
     
 ESP32 in Docker
 ===============
-
-.. code-block:: bash
-
-    ls -1 /dev > dev.txt
-    ls -1 /dev > dev2.txt
-    diff dev.txt dev2.txt  # Expected result "ttyUSB0" or "ttyACM0"
-    rm dev*.txt
 
 .. code-block:: bash
 
