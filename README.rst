@@ -135,6 +135,11 @@ Linux System Commands
     ls -1 /dev > dev2.txt  # List of peripherals connected in this moment
     diff dev.txt dev2.txt  # Expected result "ttyUSB0" or "ttyACM0"
     rm dev*.txt  # Delete the ".txt" files
+    
+    nano ~/.bashrc  # Edit the system file
+    export PATH="<directory>:$PATH"  # Add a line like this at the end of the file
+    source ~/.bashrc  # Load the new file
+    echo $PATH  # Check if everything is OK
 
 ESP32 in Docker
 ===============
