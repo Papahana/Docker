@@ -116,6 +116,8 @@ Linux System Commands
 
 .. code-block:: bash
     
+    export PATH="$HOME/bin:$PATH"  # Add path to directory
+    
     free -h  # Ram Memory
     
     ls -a # List hide files and directories
