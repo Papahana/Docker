@@ -150,4 +150,5 @@ ESP32 in Docker
     wsl -l -v # List all the installed distros
     wsl --set-version <distro name> 2 # Change the WSL version
     
+    pip install adafruit-ampy
     ampy -p /dev/ttyACM0 ls # List the content of the ESP32
